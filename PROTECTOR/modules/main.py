@@ -27,16 +27,16 @@ async def start_command_handler(_, msg):
     ]
     reply_markup = InlineKeyboardMarkup(buttons)
     await msg.reply_photo(
-        photo="https://telegra.ph/file/8f6b2cc26b522a252b16a.jpg",
+        photo="https://telegra.ph/file/fa1489797406a1be5a486.jpg",
         caption=START_TEXT,
         reply_markup=reply_markup
     )
 
 # Callback Query Handler
 gd_buttons = [
-    [InlineKeyboardButton("ᴏᴡɴᴇʀ", url=f"https://t.me/JARVIS_V2"),
+    [InlineKeyboardButton("ᴏᴡɴᴇʀ", url=f"https://t.me/BTW_AYU_0"),
      InlineKeyboardButton("• ʙᴀᴄᴋ •", callback_data="back_to_start"),
-     InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/JARVIS_V_SUPPORT")]
+     InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/NOBITA_PROFESY")]
 ]
 
 @app.on_callback_query(filters.regex("vip_back"))
